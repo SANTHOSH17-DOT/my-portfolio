@@ -1,0 +1,44 @@
+#footer {
+    position: relative;
+    background: black;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    user-select: none;
+    font-size: 3rem;
+    max-height: 200px;
+}
+
+#medias>i {
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+#medias>i:hover {
+    scale: 1.5;
+}
+
+#by {
+    font-family: sans-serif, cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    /* change font family */
+}
+
+.fa-stripe-s {
+    font-size: 2rem;
+    animation-name: byName;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: auto;
+}
+
+@keyframes byName {
+    0% {
+        color: rgb(19, 19, 168);
+    }
+    100% {
+        color: rgb(55, 179, 228);
+        transform: rotateZ(360deg);
+    }
+}

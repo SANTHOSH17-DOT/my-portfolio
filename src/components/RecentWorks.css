@@ -1,0 +1,55 @@
+#recentWorks {
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    min-height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+#titleW {
+    color: rgb(0, 162, 255);
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px rgb(153, 106, 106);
+}
+
+img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.img-container {
+    margin: 10px 30px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    box-shadow: 3px 3px 3px rgb(88, 65, 65);
+}
+
+.view-btn {
+    margin: 10px;
+    background-color: rgb(23, 189, 255);
+    color: white;
+    padding: 5px 20px;
+}
+
+.arrowsW {
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.imgs-container {
+    margin-bottom: 40px;
+}
+
+.workL {
+    font-size: 3rem;
+    transition: all 250ms ease-out;
+}
+
+.workL:hover {
+    transform: scale(1.5);
+}
