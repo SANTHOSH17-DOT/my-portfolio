@@ -1,5 +1,5 @@
 #recentWorks {
-    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     min-height: 100vh;
     position: relative;
     padding: 50px;
@@ -20,7 +20,7 @@ img {
 }
 
 .img-container {
-    margin: 10px 30px;
+    margin: 10px 20px;
     background-color: white;
     padding: 10px;
     position: relative;

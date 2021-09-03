@@ -1,18 +1,24 @@
     .aboutme {
         min-height: 90vh;
         background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+        padding: 20px;
     }
     
     .myPhoto {
         width: 45vw;
-        height: 45vw;
-        max-height: 30rem;
-        max-width: 30rem;
+        max-height: 27rem;
+        max-width: 27rem;
+        min-width: 280px;
         border-radius: 50%;
         animation-name: imageShadow;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
+    }
+    
+    .mySelf {
+        display: flex;
+        justify-content: space-around;
     }
     
     .image-container {
@@ -63,9 +69,16 @@
     
     @keyframes imageShadow {
         0% {
-            box-shadow: 16px 16px 60px rgba(255, 192, 75, 0.801), 16px -16px 60px rgba(248, 226, 28, 0.664), -16px 16px 60px rgba(248, 226, 28, 0.664), -16px -16px 60px rgba(255, 192, 75, 0.801);
+            box-shadow: 16px 16px 60px rgba(255, 254, 251, 0.801), 16px -16px 60px rgba(255, 254, 251, 0.801), -16px 16px 60px rgba(255, 254, 251, 0.801), -16px -16px 60px rgba(255, 254, 251, 0.801);
         }
         100% {
             box-shadow: 16px 16px 60px #0acdfe54, 16px -16px 60px #0acdfe54, -16px 16px 60px #0acdfe54, -16px -16px 60px #0acdfe54;
+        }
+    }
+    
+    @media only screen and (max-width:620px) {
+        .mySelf {
+            flex-direction: column-reverse;
+            justify-content: center;
         }
     }

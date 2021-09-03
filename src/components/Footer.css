@@ -4,8 +4,11 @@
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
     user-select: none;
-    font-size: 3rem;
-    max-height: 200px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 #medias>i {
@@ -15,14 +18,13 @@
 }
 
 #medias>i:hover {
-    scale: 1.5;
+    transform: scale(1.5);
 }
 
 #by {
-    font-family: sans-serif, cursive;
+    font-family: 'Hina Mincho', serif;
     font-size: 2rem;
     font-weight: 800;
-    /* change font family */
 }
 
 .fa-stripe-s {
@@ -40,5 +42,20 @@
     100% {
         color: rgb(55, 179, 228);
         transform: rotateZ(360deg);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #footer {
+        font-size: 1.5rem;
+    }
+    #medias>i {
+        margin-right: 15px;
+    }
+    #by {
+        font-size: 20px;
+    }
+    .fa-stripe-s {
+        font-size: 20px;
     }
 }

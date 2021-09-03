@@ -1,57 +1,58 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './AboutMe.css'
 function AboutMe() {
-    const typeSound = new Sound('keyStroke.wav')
+    const text = "Hi! I'm Santhosh";
     const [tags, setTags] = useState('');
-    const [typeText, setText] = useState("Hi! I'm Santhosh");
+    const [typeText] = useState("Hi! I'm Santhosh");
     var [i, setI] = useState(1);
-    const [typeInterval, setTypeInterval] = useState(setInterval(() => {
+    // while (i < text.length) {
+    //     setTimeout(() => {
+    //         setI(i + 1);
+    //         console.log(i);
+    //     }, 100)
+    //     if (i === text.length - 1) {
+    //         setTimeout(() => {
+    //             setTags('Learner | Human | Friend')
 
-        // typeSound.play();
-        setI(i + 1);
-        i += 1;
-        if (i === text.length) {
-            setTimeout(() => {
-                setTags('Learner | Human | Friend')
-
-            }, 500)
-            clearInterval(typeInterval);
-        }
-    }, 100))
-
-    // function Sound(src){
-    //     this.element = document.createElement('audio');
-    //     this.element.src= src;
-    //     this.element.setAttribute("preload","auto");
-    //     this.element.setAttribute("controls","none")
-    //     this.element.style.display = 'none';
-    //     document.body.appendChild(this.element);
-    //     this.play = ()=>{
-    //         this.element.play();
-    //     }
-    //     this.stop = ()=>{
-    //         this.element.pause();
+    //         }, 500)
     //     }
     // }
 
-    const text = "Hi! I'm Santhosh";
+
+    // var typeInterval =setInterval(() => {
+
+    //     setI(i+1);
+    //     if (i === text.length) {
+    //         setTimeout(() => {
+    //             setTags('Learner | Human | Friend')
+
+    //         }, 500)
+    //         clearInterval(typeInterval);
+    //     }
+    // }, 100)
+
+
+
+
     return (
         <div className='aboutme'>
-            <div class='row'>
-                <div className="col-6 image-container">
-                    <img src="myphoto.jpg" className='myPhoto' alt="SANTHOSH" />
+            <div className='mySelf '>
+                <div className="image-container">
+                    <img src="myphoto1.jpg" className='myPhoto' alt="SANTHOSH" />
                 </div>
-                <div className="col-6 tag-container">
+                <div className="tag-container">
 
                     <h1 id='name-intro'>
-                        {typeText.slice(0, i)}
+                        {typeText}
                     </h1>
-                    <h3 id='tags'>{tags}</h3>
+                    <h3 id='tags'>
+                        {/* {tags} */}
+                        Learner | Human | Friend</h3>
                 </div>
             </div>
             <div className="arrows">
-                <Link to='/works'><i class="fas fa-chevron-right aboutMeR"></i></Link>
+                <Link to='/works'><i className="fas fa-chevron-right aboutMeR" ></i></Link>
 
 
             </div>

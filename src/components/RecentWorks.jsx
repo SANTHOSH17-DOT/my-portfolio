@@ -58,12 +58,12 @@ function RecentWorks() {
             </div>
             <div className="row imgs-container">
                 {imgArr.map(img => (
-                    <div className="col-5 col-lg-3 img-container">
+                    <div key={img.src} className="col-5 col-lg-3 img-container">
                         <img src={img.src} className="card-img-top" alt=" " />
                         <div className="card-body">
                             <h5 className="card-title"><b>{img.title}</b></h5>
                             <p className="card-text">{img.desc}</p>
-                            <a href="#" className="btn view-btn">View</a>
+                            <a href={img.link} className="btn view-btn">View</a>
                         </div>
                     </div>
                 ))}
@@ -71,8 +71,8 @@ function RecentWorks() {
 
             </div>
             <div className='arrowsW'>
-                <Link to='/'><i class="fas fa-chevron-left workL"></i></Link>
-                
+                <Link to='/'><i className="fas fa-chevron-left workL"></i></Link>
+
 
             </div>
         </div>
