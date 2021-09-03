@@ -16,7 +16,7 @@ function Footer() {
             </div>
             <div id='by'>
                 <h3>By</h3>
-                <p><i className="fab fa-stripe-s"></i>anthosh</p>
+                <p><i className="fab fa-stripe-s"></i> anthosh</p>
             </div>
         </div>
 

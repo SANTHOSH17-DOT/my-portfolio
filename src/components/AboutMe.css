@@ -22,7 +22,7 @@
     }
     
     .image-container {
-        height: 60vh;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -61,6 +61,7 @@
         justify-content: center;
         align-items: center;
         user-select: none;
+        min-width: 50%;
     }
     
     #tags {
@@ -71,7 +72,7 @@
     
     @keyframes imageShadow {
         0% {
-            box-shadow: 16px 16px 60px rgba(255, 254, 251, 0.801), 16px -16px 60px rgba(255, 254, 251, 0.801), -16px 16px 60px rgba(255, 254, 251, 0.801), -16px -16px 60px rgba(255, 254, 251, 0.801);
+            box-shadow: 16px 16px 60px rgba(63, 158, 145, 0.479), 16px -16px 60px rgba(63, 158, 145, 0.479), -16px 16px 60px rgba(63, 158, 145, 0.479), -16px -16px 60px rgba(63, 158, 145, 0.479);
         }
         100% {
             box-shadow: 16px 16px 60px #7bb4c254, 16px -16px 60px #7bb4c254, -16px 16px 60px #7bb4c254, -16px -16px 60px #7bb4c254;

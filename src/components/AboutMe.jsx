@@ -1,40 +1,30 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './AboutMe.css'
 function AboutMe() {
     const text = "Hi! I'm Santhosh";
     const [tags, setTags] = useState('');
-    const [typeText] = useState("Hi! I'm Santhosh");
     var [i, setI] = useState(1);
-    // while (i < text.length) {
-    //     setTimeout(() => {
-    //         setI(i + 1);
-    //         console.log(i);
-    //     }, 100)
-    //     if (i === text.length - 1) {
-    //         setTimeout(() => {
-    //             setTags('Learner | Human | Friend')
-
-    //         }, 500)
-    //     }
+    var typeInterval;
+    const type = () => {
+        typeInterval = !typeInterval && setInterval(() => {
+            console.log(i);
+            setI(j => j + 1);
+        }, 100)
+        if (i === text.length) {
+            setTimeout(() => {
+                setTags('Learner | Human | Friend')
+            }, 500)
+            clearInterval(typeInterval);
+        }
+    }
+    useEffect(() => {
+        type();
+        return () => clearInterval(typeInterval);
+    }, [i])
+    // function sound(src){
+    //     this.element = 
     // }
-
-
-    // var typeInterval =setInterval(() => {
-
-    //     setI(i+1);
-    //     if (i === text.length) {
-    //         setTimeout(() => {
-    //             setTags('Learner | Human | Friend')
-
-    //         }, 500)
-    //         clearInterval(typeInterval);
-    //     }
-    // }, 100)
-
-
-
-
     return (
         <div className='aboutme'>
             <div className='mySelf '>
@@ -44,11 +34,11 @@ function AboutMe() {
                 <div className="tag-container">
 
                     <h1 id='name-intro'>
-                        {typeText}
+                        {text.slice(0, i)}
                     </h1>
                     <h3 id='tags'>
-                        {/* {tags} */}
-                        Learner | Human | Friend</h3>
+                        {tags}
+                    </h3>
                 </div>
             </div>
             <div className="arrows">
