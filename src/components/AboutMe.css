@@ -82,3 +82,9 @@
             justify-content: center;
         }
     }
+    
+    @media only screen and (max-width:400px) {
+        #name-intro {
+            font-size: 2.5rem;
+        }
+    }

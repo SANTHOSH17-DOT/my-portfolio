@@ -56,9 +56,9 @@ function RecentWorks() {
             <div id='titleW'>
                 My Recent Works
             </div>
-            <div className="row imgs-container">
+            <div className="imgs-container">
                 {imgArr.map(img => (
-                    <div key={img.src} className="col-5 col-lg-3 img-container">
+                    <div key={img.src} className=" img-container">
                         <img src={img.src} className="card-img-top" alt=" " />
                         <div className="card-body">
                             <h5 className="card-title"><b>{img.title}</b></h5>
