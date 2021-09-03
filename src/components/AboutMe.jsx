@@ -14,7 +14,7 @@ function AboutMe() {
         }, 100)
         if (i === text.length) {
             setTimeout(() => {
-                setTags(['Learner', 'Tech-Enthusiast', 'Friend', ' | '])
+                setTags(['Learner', 'Tech-Enthusiast', 'Friend', '|'])
             }, 500)
             clearInterval(typeInterval);
         }
@@ -23,9 +23,7 @@ function AboutMe() {
         type();
         return () => clearInterval(typeInterval);
     }, [i])
-    // function sound(src){
-    //     this.element = 
-    // }
+
     return (
         <div className='aboutme'>
             <div className='mySelf '>

@@ -45,6 +45,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="three.r119.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: ".aboutme",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xf2d6d6,
+            midtoneColor: 0xded6d6,
+            lowlightColor: 0xea92bc,
+            speed: 4.50
+        })
+    </script>
 </body>
 
 </html>
