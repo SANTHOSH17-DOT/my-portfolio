@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './AboutMe.css'
 function AboutMe() {
+    const myPhotoSRC = 'myphoto1.jpg';
     const text = "Hi! I'm Santhosh";
-    const [tags, setTags] = useState('');
+    const [tags, setTags] = useState([]);
     var [i, setI] = useState(1);
     var typeInterval;
     const type = () => {
@@ -13,7 +14,7 @@ function AboutMe() {
         }, 100)
         if (i === text.length) {
             setTimeout(() => {
-                setTags('Learner | Human | Friend')
+                setTags(['Learner', 'Tech-Enthusiast', 'Friend', ' | '])
             }, 500)
             clearInterval(typeInterval);
         }
@@ -29,7 +30,7 @@ function AboutMe() {
         <div className='aboutme'>
             <div className='mySelf '>
                 <div className="image-container">
-                    <img src="myphoto1.jpg" className='myPhoto' alt="SANTHOSH" />
+                    <img src={myPhotoSRC} className='myPhoto' alt="SANTHOSH" />
                 </div>
                 <div className="tag-container">
 
@@ -37,7 +38,11 @@ function AboutMe() {
                         {text.slice(0, i)}
                     </h1>
                     <h3 id='tags'>
-                        {tags}
+                        <span className='tag'>{tags[0]}</span>
+                        <span> {tags[3]} </span>
+                        <span className='tag'>{tags[1]}</span>
+                        <span> {tags[3]} </span>
+                        <span className='tag'>{tags[2]}</span>
                     </h3>
                 </div>
             </div>
