@@ -60,6 +60,25 @@ img {
     transform: scale(1.5);
 }
 
+
+/* Custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(226, 73, 73);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(158, 48, 48);
+}
+
 @media only screen and (max-width:1000px) {
     .imgs-container {
         grid-template-columns: auto auto;
