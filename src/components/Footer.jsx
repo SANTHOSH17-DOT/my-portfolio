@@ -1,18 +1,18 @@
 import React from 'react'
 import './Footer.css';
-import { Link } from 'react-router-dom';
+
 function Footer() {
     return (
         <div className='container-fluid' id='footer'>
 
             <div>
                 <h5>
-                    Follow me
+                    Contact
                 </h5>
                 <div id='medias'>
-                    <i className="fab fa-instagram"></i>
-                    <i className="fab fa-github-square"></i>
-                    <i className="fab fa-linkedin-in"></i>
+                    <a href='https://www.instagram.com/s_anthos_h_m/'target='_blank'><i className="fab fa-instagram links"></i></a>
+                    <a href='https://github.com/SANTHOSH17-DOT/'target='_blank'><i className="fab fa-github-square links"></i></a>
+                    <a href='https://www.linkedin.com/in/santhosh-m-041689217/'target='_blank'><i className="fab fa-linkedin-in links"></i></a>
                 </div>
             </div>
             <div id='by'>

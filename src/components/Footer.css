@@ -11,13 +11,14 @@
     padding: 10px 20px;
 }
 
-#medias>i {
+.links {
     margin-right: 30px;
     cursor: pointer;
+    color: white;
     transition: all ease-out 0.2s;
 }
 
-#medias>i:hover {
+.links:hover {
     transform: scale(1.5);
 }
 
