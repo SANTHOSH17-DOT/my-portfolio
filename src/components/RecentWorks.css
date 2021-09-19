@@ -64,6 +64,7 @@ img {
 
 .workL:hover {
     transform: scale(1.5);
+    cursor: url("https://img.icons8.com/fluency/30/000000/cursor--v1.png"), default;
 }
 
 
@@ -83,6 +84,7 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(158, 48, 48);
+    cursor: url("https://img.icons8.com/fluency/30/000000/cursor--v1.png"), default;
 }
 
 @keyframes workRotate {

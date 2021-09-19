@@ -7,49 +7,49 @@ function RecentWorks() {
             src: 'Auction.png',
             title: 'Auction-Ancient Relics',
             desc: 'A site where one can sell their product on auction and bid',
-            link: ''
+            link: 'https://hidden-plateau-32095.herokuapp.com/'
         },
         {
             src: 'colorTiles.png',
             title: 'Color Tiles',
             desc: 'A game which baffles your mind',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/Color-tiles/'
         },
         {
             src: 'piano.png',
             title: 'Piano',
             desc: 'Virtual piano',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/piano/'
         },
         {
             src: 'schedulePlanner.png',
             title: 'Schedule Planner',
             desc: 'Schedule planner to make your life easier',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/Schedule-planner/'
         },
         {
             src: 'scientificCalculator.png',
             title: 'Scientific Calculator',
             desc: 'Scientific calculator',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/Scientific-calculator/'
         }
         , {
             src: 'screenRecord.png',
             title: 'Screen Recorder',
             desc: 'It is a screen recorder with video downloading and screenshot options',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/screen-recorder/'
         },
         {
             src: 'spaceInvader.png',
             title: 'Space Invader',
             desc: 'A game which gives you thrilling space adventure',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/space-invader/'
         },
         {
             src: 'spaceRunner.png',
             title: 'Pro Runner',
             desc: 'A game which test your reflex',
-            link: ''
+            link: 'https://santhosh17-dot.github.io/Space-runner/'
         }]
     return (
         <div id='recentWorks'>
