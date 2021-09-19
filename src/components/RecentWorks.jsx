@@ -59,7 +59,7 @@ function RecentWorks() {
             <div className="imgs-container">
                 {imgArr.map(img => (
                     <div key={img.src} className=" img-container">
-                        <img src={img.src} className="card-img-top" alt=" " />
+                        <img loading='lazy'src={img.src} className="card-img-top" alt=" " />
                         <div className="card-body">
                             <h5 className="card-title"><b>{img.title}</b></h5>
                             <p className="card-text">{img.desc}</p>
