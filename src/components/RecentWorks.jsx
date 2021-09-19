@@ -63,7 +63,7 @@ function RecentWorks() {
                         <div className="card-body">
                             <h5 className="card-title"><b>{img.title}</b></h5>
                             <p className="card-text">{img.desc}</p>
-                            <a href={img.link} className="btn view-btn">View</a>
+                            <a href={img.link} className="btn view-btn"target='blank'>View</a>
                         </div>
                     </div>
                 ))}
