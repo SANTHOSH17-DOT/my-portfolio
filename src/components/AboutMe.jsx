@@ -28,7 +28,7 @@ function AboutMe() {
         <div className='aboutme'>
             <div className='mySelf '>
                 <div className="image-container">
-                    <img src={myPhotoSRC} className='myPhoto' alt="SANTHOSH" />
+                    <img src={myPhotoSRC} loading='lazy'className='myPhoto' alt="SANTHOSH" />
                 </div>
                 <div className="tag-container">
 
