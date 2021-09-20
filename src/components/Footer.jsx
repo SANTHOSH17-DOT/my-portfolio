@@ -10,9 +10,9 @@ function Footer() {
                     Contact
                 </h5>
                 <div id='medias'>
-                    <a href='https://www.instagram.com/s_anthos_h_m/'target='_blank'><i className="fab fa-instagram links"></i></a>
-                    <a href='https://github.com/SANTHOSH17-DOT/'target='_blank'><i className="fab fa-github-square links"></i></a>
-                    <a href='https://www.linkedin.com/in/santhosh-m-041689217/'target='_blank'><i className="fab fa-linkedin-in links"></i></a>
+                    <a href='https://www.instagram.com/s_anthos_h_m/'target='_blank'rel="noreferrer"><i className="fab fa-instagram links"></i></a>
+                    <a href='https://github.com/SANTHOSH17-DOT/'target='_blank'rel="noreferrer"><i className="fab fa-github-square links"></i></a>
+                    <a href='https://www.linkedin.com/in/santhosh-m-041689217/'target='_blank'rel="noreferrer"><i className="fab fa-linkedin-in links"></i></a>
                 </div>
             </div>
             <div id='by'>
