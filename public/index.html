@@ -34,6 +34,9 @@
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id='preloader'>
+
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -47,6 +50,7 @@
     -->
     <script src="three.r119.min.js"></script>
     <script src="vanta.fog.min.js"></script>
+
     <script>
         VANTA.FOG({
             el: ".aboutme",
@@ -59,6 +63,12 @@
             midtoneColor: 0xded6d6,
             lowlightColor: 0xea92bc,
             speed: 4.50
+        })
+    </script>
+    <script>
+        var loader = document.getElementById('preloader')
+        window.addEventListener('load', () => {
+            loader.style.display = 'none'
         })
     </script>
 </body>

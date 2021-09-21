@@ -8,3 +8,7 @@ body {
     min-height: 100vh;
     cursor: url('https://img.icons8.com/fluency/30/000000/cursor--v1.png'), default;
 }
+
+#preloader {
+    background: black url('twirl-preloader.gif') no-repeat center center;
+}

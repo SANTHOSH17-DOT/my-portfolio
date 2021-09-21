@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
-
 import RecentWorks from './components/RecentWorks';
 function App() {
   return (
