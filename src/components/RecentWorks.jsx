@@ -50,6 +50,12 @@ function RecentWorks() {
             title: 'Pro Runner',
             desc: 'A game which test your reflex',
             link: 'https://santhosh17-dot.github.io/Space-runner/'
+        },
+        {
+            src: 'prodigyWeb.png',
+            title: 'Prodigy Website',
+            desc: 'Website for Prodigy NITT',
+            link: 'https://santhosh17-dot.github.io/prodigy-website/'
         }]
     return (
         <div id='recentWorks'>
